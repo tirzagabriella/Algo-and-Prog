@@ -1,0 +1,21 @@
+# Tirza Gabriella 2602109870 
+# Write a program for a guessing game. Tell the user to pick a number from 1 - 100
+# Take the user's input (int) and the program will tell if the user's guess is correct
+# If the user's input is not correct, tell them if the guess was too high or too low.
+# You may incorporate a while loop, if you already understand, to let the program run until a guess is correct.
+
+
+import random
+
+number = random.randint (1, 100)
+user_input = 0
+
+while user_input != number:
+  user_input = int(input("Guess the number : "))
+
+  if user_input > number:
+    print("too high")
+  elif user_input < number:
+    print("too low")
+  else:
+    print("You got it")
